@@ -13,7 +13,8 @@ TestResults/
 *.metaproj*
 *.tlog
 *.wrn
-*.err
+*.err  
+
 
 # Visual Studio / VS Code / Rider
 .vs/
@@ -23,6 +24,7 @@ TestResults/
 *.user
 *.userosscache
 *.sln.docstates
+
 
 # NuGet
 packages/
