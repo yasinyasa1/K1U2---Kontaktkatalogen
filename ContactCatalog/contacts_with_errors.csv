@@ -1,0 +1,8 @@
+Name,Email,Tags
+Valid Person,valid@email.com,work
+,missing.name@test.com,friend
+Invalid Email,notanemail,work
+yasin Duplicate,yasin.duplicate@test.com,work
+yasin Duplicate,yasin.duplicate@test.com,friend
+Another Valid,another@test.com,family,friend
+
