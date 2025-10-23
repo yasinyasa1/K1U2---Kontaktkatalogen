@@ -70,6 +70,4 @@ appsettings.Development.json
 *.pfx
 *.snk
 
-# Docker (om sådant finns)
-**/.dockerignore
-**/Dockerfile.*
+
