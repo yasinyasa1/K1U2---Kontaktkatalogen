@@ -1,0 +1,75 @@
+"" 
+# Byggutdata
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Bb]enchmarkDotNet.Artifacts/
+TestResults/
+*.VisualState.xml
+*.cache/
+*.dbmdl
+*.jfm
+*.metaproj*
+*.tlog
+*.wrn
+*.err
+
+# Visual Studio / VS Code / Rider
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+# bevara packages.config om du använder den
+!**/packages/build/
+!**/packages/repositories.config
+
+# Publisering / deploy
+publish/
+*.Publish.xml
+
+# Temp & genererat
+*.tmp
+*.temp
+~$*
+*.svclog
+*.pidb
+*.log
+*.local.json
+*.orig
+
+# Resurser
+*.psess
+*.vsp
+*.vspx
+*.coverage
+*.coveragexml
+
+# ReSharper / analyzers
+_ReSharper.*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Rider
+*.sln.iml
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Secret/miljö
+*.Secrets.json
+appsettings.Development.json
+*.pfx
+*.snk
+
+# Docker (om sådant finns)
+**/.dockerignore
+**/Dockerfile.*
