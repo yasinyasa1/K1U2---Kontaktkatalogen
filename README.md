@@ -98,4 +98,3 @@ Below is an example of the program running:
 ![Program run screenshot](RunImage.png)
 
 
-
