@@ -172,7 +172,7 @@ public class ContactValidatorTests
         };
         var existingEmails = new HashSet<string>();
 
-        // Act & Assert - Tags are optional, should not throw
+        
         var exception = Record.Exception(() => _validator.Validate(contact, existingEmails));
         Assert.Null(exception);
     }
