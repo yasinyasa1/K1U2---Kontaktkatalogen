@@ -26,9 +26,8 @@ Each contact has:
 
 ### 1.1 Run the interactive menu
 
-```Teminal
-dotnet run 
+```bash
+dotnet run
 
-Below is an example of the program running:
-![Program run screenshot](RunImage.png)
+
 
