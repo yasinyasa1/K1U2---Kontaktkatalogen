@@ -7,14 +7,14 @@ namespace ContactCatalog.Tests;
 public class EmailValidatorTests
 {
     [Theory]
-    [InlineData("codaygmail.com")]        // missing '@'
-    [InlineData("")]                      // empty
-    [InlineData("coday awesome.com")]     // space inside
+    [InlineData("codaygmail.com")]        
+    [InlineData("")]                      
+    [InlineData("coday awesome.com")]     
     public void Validate_InvalidEmail_ThrowsInvalidContactException(string email)
     {
         // Arrange
         var validator = new ContactValidator();
-        var existingEmails = new HashSet<string>(); // nothing added yet
+        var existingEmails = new HashSet<string>(); 
 
         var contact = new Contact
         {
@@ -49,7 +49,7 @@ public class EmailValidatorTests
         var ex = Record.Exception(() =>
             validator.Validate(contact, existingEmails));
 
-        // Assert
+       
         Assert.Null(ex);
     }
 }
