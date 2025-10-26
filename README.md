@@ -9,7 +9,7 @@ The application supports:
 - Listing all contacts
 - Searching contacts by name
 - Filtering contacts by tag
-- (Bonus) Importing contacts from CSV via a command-line argument
+- Importing contacts from CSV via a command-line argument
 
 Each contact has:
 - `Id` (int, unique)
@@ -33,6 +33,5 @@ dotnet run
 Below is an example of the program running:
 
 ![Program run screenshot](RunImage.png)
-
 
 
