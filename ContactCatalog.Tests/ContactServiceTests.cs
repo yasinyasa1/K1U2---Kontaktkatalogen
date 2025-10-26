@@ -180,7 +180,7 @@ public class ContactServiceTests
         Assert.All(result, c =>
             Assert.Contains("friend", c.Tags, StringComparer.OrdinalIgnoreCase));
 
-        // alphabetical sort by name is enforced in repository, so we expect Anna then Charlie
+        // alphabetical sort by name is enforced in repository, so we expect Anna then Charlie.
         Assert.Equal("Anna", result[0].Name);
         Assert.Equal("Charlie", result[1].Name);
 
