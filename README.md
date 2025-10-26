@@ -29,5 +29,8 @@ Each contact has:
 ```bash
 dotnet run
 
+Below is an example of the program running:
+
+![Program run screenshot](RunImage.png)
 
 
