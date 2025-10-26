@@ -115,8 +115,6 @@ public class ContactServiceTests
             new Contact { Id = 2, Name = "Johnny Walker", Email = "johnny@example.com", Tags = new List<string>() }
         };
 
-        //_mockRepo.Setup(r => r.SearchByName(query))
-        //    .Returns(testContacts);
         _mockRepo.Setup(r => r.SearchByName(query))
     .Returns(testContacts.Where(c => c.Name.Contains(query, StringComparison.OrdinalIgnoreCase)));
 
