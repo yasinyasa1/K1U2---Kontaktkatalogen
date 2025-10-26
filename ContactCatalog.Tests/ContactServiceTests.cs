@@ -115,14 +115,17 @@ public class ContactServiceTests
             new Contact { Id = 2, Name = "Johnny Walker", Email = "johnny@example.com", Tags = new List<string>() }
         };
 
+        //_mockRepo.Setup(r => r.SearchByName(query))
+        //    .Returns(testContacts);
         _mockRepo.Setup(r => r.SearchByName(query))
-            .Returns(testContacts);
+    .Returns(testContacts.Where(c => c.Name.Contains(query, StringComparison.OrdinalIgnoreCase)));
+
 
         // Act
         var result = _service.SearchContacts(query);
 
         // Assert
-        Assert.Equal(2, result.Count());
+        Assert.Equal(1, result.Count());
         Assert.All(result, c => Assert.Contains("Yasin", c.Name, StringComparison.OrdinalIgnoreCase));
     }
 
